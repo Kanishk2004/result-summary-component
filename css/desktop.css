@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+}
+
+.left h3{
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: hsl(221, 100%, 96%);
+    margin: 20px auto 0px;
+}
+
+.container {
+    display: flex;
+    border-radius: 30px;
+    width: 600px;
+    height: fit-content;
+    box-shadow:10px 40px 400px -100px hsl(241, 100%, 89%) ;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+/*----------------------- LEFT SECTION -----------------------*/
+
+.left {
+    width: 50%;
+    border-radius: 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 20px;
+}
+
+.score {
+    width: 150px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    height: 150px;
+    margin: auto;
+    /* position: relative; */
+}
+
+.score h1 {
+    font-size: 50px;
+    color: white;
+    padding: 30px 30px 0px;
+    margin: 0;
+    font-weight: 800;
+}
+
+.score p {
+    color: hsla(241, 100%, 89%, 0.564);
+    margin: 0;
+}
+
+.comment p {
+    color: hsla(241, 100%, 89%, 0.832);
+    padding: 10px 10px 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*----------------------- RIGHT SECTION -----------------------*/
+
+.right {
+    width: 50%;
+    padding: 25px;
+}
+
+.summary-heading {
+    text-align: left;
+    color: hsl(224, 30%, 27%);
+    margin: 0;
+}
+
+
+/*----------------------- STATS TABS -----------------------*/
+
+.tabs{
+    padding: 10px;
+    margin: 20px 0px 20px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.tabs h3 {
+    margin: 0;
+}
+
+.tabs p {
+    margin: 0;
+    color: hsl(243, 32%, 71%);
+}
+
+span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+.name {
+    display: flex;
+}
+
+.name img {
+    margin-right: 10px;
+}
+
+
+
+.red {
+    background-color: hsla(0, 100%, 67%, 0.116);
+}
+.red h3 {
+    color: hsl(0, 100%, 67%);
+}
+
+
+
+.yellow {
+    background-color: hsl(39, 100%, 56%, 0.116);
+}
+.yellow h3 {
+    color: hsl(39, 100%, 56%);
+}
+
+
+
+.green {
+    background-color: hsl(166, 100%, 37%, 0.116);
+}
+.green h3 {
+    color: hsl(166, 100%, 37%);
+}
+
+
+
+.blue {
+    background-color: hsl(234, 85%, 45%, 0.116);
+}
+.blue h3 {
+    color: hsl(234, 85%, 45%);
+}
+
+/*----------------------- BUTTON -----------------------*/
+
+button {
+    border: none;
+    color: white;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 15px ;
+    font-size: 18px;
+    border-radius: 70px;
+    background-color: hsl(224, 30%, 27%);
+}
+
+button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+
+
+/*----------------------- RESPONSIVE -----------------------*/
+
+
+@media screen and (max-width: 550px) {
+    .container {
+        flex-wrap: wrap;
+        width: fit-content;
+        margin: 0;
+    }
+
+    .left {
+        width: fit-content;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
